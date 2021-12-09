@@ -73,3 +73,6 @@ typings/
 
 # FuseBox cache
 .fusebox/
+
+# pnpm lock file
+pnpm-lock.yaml
