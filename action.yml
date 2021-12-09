@@ -1,0 +1,29 @@
+name: 'Wait For Response'
+description: 'Github action to wait for a response'
+author: 'Stella Care ApS'
+branding:
+    icon: 'clock'  
+    color: 'blue'
+inputs:
+    url:
+        description: 'URL to poll'
+        required: false
+        default: 'http://localhost/'
+    response-code:
+        description: 'Response code to wait for'
+        required: false
+        default: '200'
+    timeout:
+        description: 'Timeout before giving up in seconds'
+        required: false
+        default: '30'
+    interval:
+        description: 'Interval between polling in seconds'
+        required: false
+        default: '1'
+outputs:
+  result:
+    description: '0 if response code returned within timeout, otherwise 1'
+runs:
+  using: 'node12'
+  main: 'index.js'

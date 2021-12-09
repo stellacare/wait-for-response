@@ -1,0 +1,24 @@
+{
+  "name": "wait-for-response",
+  "version": "1.0.0",
+  "description": "Github action to wait for a response",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stellacare/wait-for-response.git"
+  },
+  "author": "stellacare",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stellacare/wait-for-response/issues"
+  },
+  "homepage": "https://github.com/stellacare/wait-for-response#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "node-fetch": "^3.1.0"
+  },
+  "type": "module"
+}
